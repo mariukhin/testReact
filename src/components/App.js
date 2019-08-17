@@ -1,15 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import StartPage from '../pages/StartPage/StartPage';
-import HistoryPage from '../pages/HistoryPage/HistoryPage';
+import CartPage from '../pages/CartPage/CartPage';
+import Header from './Header/Header';
 import './stylesApp.css';
+import 'semantic-ui-css/semantic.min.css';
 
-function App() {
+function App({ products }) {
   return (
     <>
       <Router>
-        <Route exact path="/" component={StartPage} />
-        <Route exact path="/history" component={HistoryPage} />
+        <Header />
+        <Route
+          exact
+          path="/"
+          render={() => <StartPage products={products} />}
+        />
+        <Route exact path="/cart" component={CartPage} />
       </Router>
     </>
   );

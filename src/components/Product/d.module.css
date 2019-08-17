@@ -1,0 +1,7 @@
+.div {
+  margin-right: 20px;
+}
+.div:nth-child() ul {
+  list-style: none;
+  flex-wrap: nowrap;
+}
