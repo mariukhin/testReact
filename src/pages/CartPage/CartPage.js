@@ -6,10 +6,10 @@ import ProductList from '../../components/ProductList/ProductList';
 import * as cartSelectors from '../../redux/cart/cartSelectors';
 import * as totalPriceSelectors from '../../redux/totalPrice/totalPriceSelectors';
 import {
-  updateCount,
-  deleteProduct,
+  updatecount,
+  deleteproduct,
 } from '../../redux/cart/cartActionCreators';
-import { updateTotalPrice } from '../../redux/totalPrice/totalPriceActionCreators';
+import { updatetotalPrice } from '../../redux/totalPrice/totalPriceActionCreators';
 
 const TotalPrice = styled.p`
   text-align: center;
@@ -46,15 +46,29 @@ class CartPage extends Component {
     );
   }
 }
+CartPage.propTypes = {
+  deleteProduct: PropTypes.func.isRequired,
+  cart: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      count: PropTypes.number,
+    }),
+  ).isRequired,
+  totalPrice: PropTypes.number.isRequired,
+  updateCount: PropTypes.func.isRequired,
+};
 const mapStateToProps = state => ({
   cart: cartSelectors.getCart(state),
   totalPrice: totalPriceSelectors.getTotalPrice(state),
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateCount: product => dispatch(updateCount(product)),
-  deleteProduct: id => dispatch(deleteProduct(id)),
-  updateTotalPrice: price => dispatch(updateTotalPrice(price)),
+  updateCount: product => dispatch(updatecount(product)),
+  deleteProduct: id => dispatch(deleteproduct(id)),
+  updateTotalPrice: price => dispatch(updatetotalPrice(price)),
 });
 
 export default connect(

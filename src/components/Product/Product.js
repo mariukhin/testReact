@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'semantic-ui-react';
@@ -12,7 +13,7 @@ import {
   CountContainer,
   Count,
 } from './styles';
-import { updateTotalPrice } from '../../redux/totalPrice/totalPriceActionCreators';
+import { updatetotalPrice } from '../../redux/totalPrice/totalPriceActionCreators';
 import * as totalPriceSelectors from '../../redux/totalPrice/totalPriceSelectors';
 
 class Product extends Component {
@@ -128,12 +129,14 @@ Product.propTypes = {
   onDeleteProduct: PropTypes.func,
   totalPrice: PropTypes.number.isRequired,
   updateTotalPrice: PropTypes.func.isRequired,
+  count: PropTypes.number,
 };
 Product.defaultProps = {
   isStartPage: false,
   onAddToCart: null,
   onCountUpdate: null,
   onDeleteProduct: null,
+  count: 1,
 };
 
 const mapStateToProps = state => ({
@@ -141,7 +144,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateTotalPrice: price => dispatch(updateTotalPrice(price)),
+  updateTotalPrice: price => dispatch(updatetotalPrice(price)),
 });
 export default connect(
   mapStateToProps,

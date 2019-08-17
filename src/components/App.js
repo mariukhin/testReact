@@ -4,7 +4,6 @@ import { ToastProvider } from 'react-toast-notifications';
 import StartPage from '../pages/StartPage/StartPage';
 import CartPage from '../pages/CartPage/CartPage';
 import Header from './Header/Header';
-import './stylesApp.css';
 import 'semantic-ui-css/semantic.min.css';
 
 function App({ products }) {

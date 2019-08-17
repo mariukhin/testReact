@@ -11,13 +11,6 @@ const cartReducer = (state = [], { type, payload }) => {
       ];
     case ActionType.DELETE_FROM_CART:
       return [...state.filter(item => item.id !== payload.id)];
-    // case CurrentPostActionType.UPDATE_POST_SUCCESS:
-    //   return [
-    //     payload.post,
-    //     ...state.filter(item => item.id !== payload.post.id),
-    //   ];
-    // case ActionType.DELETE_POST_SUCCESS:
-    //   return [...state.filter(item => item.id !== payload.id)];
     default:
       return state;
   }

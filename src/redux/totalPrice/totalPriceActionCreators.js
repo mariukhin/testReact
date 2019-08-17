@@ -1,6 +1,6 @@
 import { ActionType } from './totalPriceActions';
 
-export const updateTotalPrice = price => ({
+export const updatetotalPrice = price => ({
   type: ActionType.UPDATE_TOTAL_PRICE,
   payload: {
     price,
