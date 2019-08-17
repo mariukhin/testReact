@@ -4,7 +4,7 @@ export const ProductListContainer = styled.div`
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 `;
 export const ProductListTitle = styled.p`

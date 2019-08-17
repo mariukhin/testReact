@@ -12,7 +12,7 @@ const Header = () => (
       </NavItem>
       <NavItem>
         <NavLink to="/cart">
-          <Button icon="shopping cart" />
+          <Button primary icon="shopping cart" />
         </NavLink>
       </NavItem>
     </Nav>

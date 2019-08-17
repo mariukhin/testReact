@@ -7,13 +7,27 @@ export default class ProductList extends Component {
   state = {};
 
   render() {
-    const { products, title } = this.props;
+    const {
+      products,
+      title,
+      isStartPage,
+      onAddToCart,
+      onCount,
+      onDelete,
+    } = this.props;
     return (
       <div>
         <ProductListTitle>{title}</ProductListTitle>
         <ProductListContainer>
           {products.map(item => (
-            <Product key={item.id} {...item} />
+            <Product
+              key={item.id}
+              {...item}
+              isStartPage={isStartPage}
+              onAddToCart={onAddToCart}
+              onCountUpdate={onCount}
+              onDeleteProduct={onDelete}
+            />
           ))}
         </ProductListContainer>
       </div>
