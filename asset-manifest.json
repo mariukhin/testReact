@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/testReact/static/js/main.724e6820.chunk.js",
-    "main.js.map": "/testReact/static/js/main.724e6820.chunk.js.map",
+    "main.js": "/testReact/static/js/main.cbef6c98.chunk.js",
+    "main.js.map": "/testReact/static/js/main.cbef6c98.chunk.js.map",
     "runtime~main.js": "/testReact/static/js/runtime~main.0ac0c888.js",
     "runtime~main.js.map": "/testReact/static/js/runtime~main.0ac0c888.js.map",
     "static/css/2.c90771c8.chunk.css": "/testReact/static/css/2.c90771c8.chunk.css",
     "static/js/2.07144bde.chunk.js": "/testReact/static/js/2.07144bde.chunk.js",
     "static/js/2.07144bde.chunk.js.map": "/testReact/static/js/2.07144bde.chunk.js.map",
     "index.html": "/testReact/index.html",
-    "precache-manifest.423aa1fa6a7c58413ab635a7933ccd5d.js": "/testReact/precache-manifest.423aa1fa6a7c58413ab635a7933ccd5d.js",
+    "precache-manifest.d4e49187541ccdefbea745699cf2a196.js": "/testReact/precache-manifest.d4e49187541ccdefbea745699cf2a196.js",
     "service-worker.js": "/testReact/service-worker.js",
     "static/css/2.c90771c8.chunk.css.map": "/testReact/static/css/2.c90771c8.chunk.css.map",
     "static/media/semantic.min.css": "/testReact/static/media/outline-icons.ef60a4f6.woff"
